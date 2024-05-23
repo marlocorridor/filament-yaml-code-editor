@@ -5,6 +5,7 @@
   "author": "Sebastiaan Kloos <sebastiaankloos@pm.me>",
   "license": "MIT",
   "dependencies": {
+    "@codemirror/autocomplete": "^0.19",
     "@codemirror/basic-setup": "^0.19.3",
     "@codemirror/commands": "^0.19.8",
     "@codemirror/gutter": "^0.19.9",
@@ -13,7 +14,10 @@
     "@codemirror/lang-javascript": "^0.19.7",
     "@codemirror/lang-json": "^0.19.2",
     "@codemirror/lang-php": "^0.19.1",
+    "@codemirror/language": "^6.10.1",
     "@codemirror/view": "^0.19.48",
+    "@ddietr/codemirror-themes": "^1.4.2",
+    "@lezer/highlight": "^1.2.0",
     "esbuild": "^0.14.34"
   },
   "scripts": {

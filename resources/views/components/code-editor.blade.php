@@ -3,10 +3,21 @@
         :field="$field"
         :label-sr-only="$isLabelHidden()"
 >
-
     <div
         x-data="codeEditorFormComponent({
-            state: $wire.{{ $applyStateBindingModifiers('entangle(\'' . $getStatePath() . '\')') }},
+            state: $wire.{{ $applyStateBindingModifiers("\$entangle('{$getStatePath()}')") }},
+            autocomplete_variables: @js($getAutoCompleteVariables()),
+            @if($darkMode() == 'media')
+			theme: (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'materialDark' : 'materialLight'),
+			@elseif($darkMode() == 'class')
+			theme: (document.querySelector('html').getAttribute('class').includes('dark') ? 'materialDark' : 'materialLight'),
+			@elseif($darkMode() == 'force')
+			theme: 'materialDark',
+			@elseif($darkMode() == false)
+			theme: 'materialLight',
+			@else
+			theme: (window.matchMedia('(prefers-color-scheme: dark)').matches || document.querySelector('html').getAttribute('class').includes('dark') ? 'materialDark' : 'materialLight'),
+			@endif
         })"
     >
         <div
