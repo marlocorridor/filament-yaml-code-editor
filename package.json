@@ -9,7 +9,7 @@
     "@codemirror/basic-setup": "^0.19.3",
     "@codemirror/commands": "^0.19.8",
     "@codemirror/gutter": "^0.19.9",
-    "@codemirror/lang-yaml": "^0.19.3",
+    "@codemirror/lang-yaml": "^6.1.1",
     "@codemirror/language": "^6.10.1",
     "@codemirror/view": "^0.19.48",
     "@ddietr/codemirror-themes": "^1.4.2",
