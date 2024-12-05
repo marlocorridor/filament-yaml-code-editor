@@ -1,10 +1,10 @@
 <?php
 
-namespace Wiebenieuwenhuis\FilamentCodeEditor\Tests;
+namespace KamotePh\FilamentCodeEditor\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Wiebenieuwenhuis\FilamentCodeEditor\FilamentCodeEditorServiceProvider;
+use KamotePh\FilamentCodeEditor\FilamentCodeEditorServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'SebastiaanKloos\\FilamentCodeEditor\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'KamotePh\\FilamentCodeEditor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
