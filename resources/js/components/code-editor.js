@@ -3,11 +3,7 @@ import {EditorView, keymap} from "@codemirror/view";
 import { indentWithTab } from "@codemirror/commands";
 
 
-// import { javascript } from "@codemirror/lang-javascript";
-// import { json } from "@codemirror/lang-json";
-// import { php } from "@codemirror/lang-php";
-import { css } from "@codemirror/lang-css";
-import {html, htmlLanguage} from "@codemirror/lang-html";
+import { yaml } from "@codemirror/lang-yaml";
 import {autocompletion} from "@codemirror/autocomplete";
 
 import {materialDarkTheme} from './material-dark';
@@ -64,10 +60,7 @@ export default (Alpine) => {
                         extensions: [
                             basicSetup,
                             keymap.of([indentWithTab]),
-                            // javascript(),
-                            // php(),
-                            // json(),
-                            // css(),
+                            yaml(),
                             EditorView.lineWrapping,
                             theme === 'materialDark' ? materialDarkTheme : materialLightTheme,
                             html(),
@@ -75,9 +68,6 @@ export default (Alpine) => {
                                activateOnTyping: true,
                                 override: [myVariableCompletions(autocomplete_variables)],
                             }),
-                            // htmlLanguage.data.of({
-                            //     autocomplete: myCompletions
-                            // }),
                             EditorView.updateListener.of((v) => {
                                 if (v.docChanged) {
                                     this.state = v.state.doc.toString();

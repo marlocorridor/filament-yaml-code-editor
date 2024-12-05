@@ -1,11 +1,13 @@
 {
-    "name": "wiebenieuwenhuis/filament-code-editor",
-    "description": "Code editor for Filament",
+    "name": "marlocorridor/filament-yaml-code-editor",
+    "description": "Code editor:yaml for Filament",
     "keywords": [
         "laravel",
-        "filament-code-editor"
+        "filament-code-editor",
+        "code-editor",
+        "yaml"
     ],
-    "homepage": "https://github.com/sweebee/filament-code-editor",
+    "homepage": "https://github.com/marlocorridor/filament-yaml-code-editor",
     "license": "MIT",
     "authors": [
         {
@@ -26,8 +28,8 @@
         "spatie/laravel-package-tools": "^1.9.2"
     },
     "require-dev": {
+        "larastan/larastan": "^2.9",
         "nunomaduro/collision": "^8.1",
-        "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^8.0|^9.0",
         "pestphp/pest": "^2.34",
         "pestphp/pest-plugin-laravel": "^2.3",
