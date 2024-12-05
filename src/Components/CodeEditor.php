@@ -8,14 +8,14 @@ use Filament\Forms\Components\Field;
 class CodeEditor extends Field
 {
 //    use EvaluatesClosures;
-    protected string $view = 'filament-code-editor::components.code-editor';
+    protected string $view = 'filament-yaml-code-editor::components.code-editor';
     protected \Closure|array $autoCompleteVariables = [];
     protected string|bool $darkMode;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->darkMode = config('filament-code-editor.darkMode', 'auto');
+        $this->darkMode = config('filament-yaml-code-editor.darkMode', 'auto');
     }
 
     public function darkMode(): string | bool

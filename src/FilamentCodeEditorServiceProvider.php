@@ -12,7 +12,7 @@ class FilamentCodeEditorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-code-editor')->hasViews();
+        $package->name('filament-yaml-code-editor')->hasViews();
     }
 
     public function bootingPackage() {
