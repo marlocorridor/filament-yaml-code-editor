@@ -11,6 +11,11 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Marlo Corridor",
+            "email": "corridor.marlo@gmail.com",
+            "role": "Developer"
+        },
+        {
             "name": "Sebastiaan Kloos",
             "email": "sebastiaankloos@pm.me",
             "role": "Developer"

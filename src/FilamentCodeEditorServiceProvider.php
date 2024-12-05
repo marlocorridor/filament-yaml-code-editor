@@ -1,6 +1,6 @@
 <?php
 
-namespace Wiebenieuwenhuis\FilamentCodeEditor;
+namespace KamotePh\FilamentCodeEditor;
 
 use Filament\Facades\Filament;
 use Spatie\LaravelPackageTools\Package;

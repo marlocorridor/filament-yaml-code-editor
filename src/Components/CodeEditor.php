@@ -1,6 +1,6 @@
 <?php
 
-namespace Wiebenieuwenhuis\FilamentCodeEditor\Components;
+namespace KamotePh\FilamentCodeEditor\Components;
 
 use Filament\Forms\Components\Field;
 //use Filament\Support\Concerns\EvaluatesClosures;
