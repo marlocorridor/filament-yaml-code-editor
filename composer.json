@@ -46,13 +46,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Wiebenieuwenhuis\\FilamentCodeEditor\\": "src",
-            "Wiebenieuwenhuis\\FilamentCodeEditor\\Database\\Factories\\": "database/factories"
+            "KamotePh\\FilamentCodeEditor\\": "src",
+            "KamotePh\\FilamentCodeEditor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wiebenieuwenhuis\\FilamentCodeEditor\\Tests\\": "tests"
+            "KamotePh\\FilamentCodeEditor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -70,7 +70,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wiebenieuwenhuis\\FilamentCodeEditor\\FilamentCodeEditorServiceProvider"
+                "KamotePh\\FilamentCodeEditor\\FilamentCodeEditorServiceProvider"
             ]
         }
     },

@@ -13,7 +13,7 @@ composer require marlocorridor/filament-yaml-code-editor
 ## Usage
 
 ```php
-use Wiebenieuwenhuis\FilamentCodeEditor\Components\CodeEditor;
+use KamotePh\FilamentCodeEditor\Components\CodeEditor;
 
 CodeEditor::make('meta'), //in YAML format
 ```
