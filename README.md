@@ -9,7 +9,7 @@ This package provides a code editor form field type for Filament. It's based on 
 You can install the package via composer:
 
 ```bash
-composer require wiebenieuwenhuis/filament-code-editor
+composer require marlocorridor/filament-yaml-code-editor
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ composer require wiebenieuwenhuis/filament-code-editor
 ```php
 use Wiebenieuwenhuis\FilamentCodeEditor\Components\CodeEditor;
 
-CodeEditor::make('custom_css'),
+CodeEditor::make('meta'), //in YAML format
 ```
 
 ## Testing
@@ -40,6 +40,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
+- [exchangedefender](https://github.com/exchangedefender)
 - [Sebastiaan Kloos](https://github.com/SebastiaanKloos)
 - [Wiebe Nieuwenhuis](https://github.com/sweebee)
 
