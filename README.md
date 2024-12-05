@@ -1,7 +1,5 @@
 # Code editor for Filament
 
- > This is a fork of Sebastiaan Kloose's original filament code editor, as the original repository is archived, I created this fork.
-
 This package provides a code editor form field type for Filament. It's based on CodeMirror 6.
 
 ## Installation
